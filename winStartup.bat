@@ -1,0 +1,1 @@
+start C:\python27\python.exe C:\Users\eway\Documents\GitHub\KeyPressRecorder\keyPressRecorder.py
