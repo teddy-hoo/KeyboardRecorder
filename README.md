@@ -1,3 +1,5 @@
+## windows setup
+
 ### env setup
 
 1. python versoin: 2.7.4
@@ -9,3 +11,15 @@
 
 ### windows 7 install
 put the file winStartup.bat to C:\Users\{yourusername}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+## mac os x setup
+
+### env setup
+
+1. python 2.7
+
+1. sudo pip install pyobjc-core
+
+1. sudo pip install pyobjc
+
+1. sudo pip install requests
