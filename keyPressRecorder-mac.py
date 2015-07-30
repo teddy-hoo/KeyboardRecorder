@@ -42,7 +42,6 @@ def handler(event):
             print begin
             print records
             r = requests.post(URL, data={'user': USERNAME, 'records': json.dumps(records)})
-            NSLog(r.status_code)
             records = {}
             begin   = int(time.time())
     
